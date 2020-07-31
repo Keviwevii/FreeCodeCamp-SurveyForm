@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 23px;
+    
+    background-image:linear-gradient(to bottom right,#fa940f,red );
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+  letter-spacing: 3px;  
+  display:flex;
+  flex-direction: column;
+    
+}
+
+    
+.container{
+    
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+    background-color: rgba(235, 79, 8, 0.966);
+    border-radius:10px;
+    box-shadow: 20px 20px 60px black;
+    
+}
+
+#name, #email, #number{
+    width: 80%;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+#comments{
+   
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+#submit{
+    
+    padding: 20px;
+    background-color:#e0983a ;
+    border: none;
+    font-size: 20px;
+}
+label{
+    margin-right: 10px;
+}
