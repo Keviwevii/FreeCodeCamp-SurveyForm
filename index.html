@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" type=text/css> <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+</head>
+<header class="header">
+
+    <h1 id="title" class='text-center'>Nightflame Candles</h1>
+    <p>Survey Form</p>
+    <p id="description" class="description text-center"> Please let us know how you feel about our candles!
+    </p>
+</header>
+<div class="container">
+
+    <body>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label><br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <br>
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label><br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email."
+                    required />
+            </div>
+            <br>
+            <div class="form-group">
+                <label id="number-label" for="number">Age: <span class="clue">(optional)</span></label><br>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Which scent was your candle?</p>
+                <select id="dropdown" name="scent" class="form-control" required>
+                    <option disabled selected value>Select your scent</option>
+                    <option value="lemon-lavender">Lemon Lavender</option>
+                    <option value="midsummer-night">Midsummer Night</option>
+                    <option value="clean-cotton">Clean Cotton</option>
+                    <option value="bahama-breeze">Bahama Breeze</option>
+                    <option value="lucky shamrock">Lucky Shamrock</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What rating would you give our candles?</p>
+                <label>
+                    <input name="user-rating" value="1" type="radio" class="input-radio" checked /> 1
+                </label>
+                <label>
+                    <input name="user-rating" value="2" type="radio" class="input-radio" /> 2
+                </label>
+                <label>
+                    <input name="user-rating" value="3" type="radio" class="input-radio" /> 3
+                </label>
+                <label>
+                    <input name="user-rating" value="4" type="radio" class="input-radio" /> 4
+                </label>
+                <label>
+                    <input name="user-rating" value="5" type="radio" class="input-radio" /> 5
+                </label>
+            </div>
+            <div class="form-group">
+                <p>In which way(s) do you use our candles?<span class="clue"> (Check all that apply)</span></p>
+                <label>
+                    <input name="way" value="relaxation" type="checkbox" class="input-checkbox" /> Relaxation
+                </label>
+                <label>
+                    <input name="way" value="decor" type="checkbox" class="input-checkbox" /> Decor
+                </label>
+                <label>
+                    <input name="way" value="fragrance" type="checkbox" class="input-checkbox" /> Fragrance
+                </label><br>
+                <label>
+                    <input name="way" value="romance" type="checkbox" class="input-checkbox" /> Romance
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
+
+                </textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+
+</div>
+
+</body>
+
+</html>
